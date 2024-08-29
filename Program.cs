@@ -6,7 +6,7 @@ Questions:
 using System.Diagnostics;
 
 Console.WriteLine("This program encrypts the characters of a message using the Vigenere method.");
-Console.WriteLine("Please enter a message");
+Console.WriteLine("Please enter a message!");
 string message = Console.ReadLine() ?? string.Empty; //if value is null, set to string to empty
 bool correctInput = false;
 string input = string.Empty;

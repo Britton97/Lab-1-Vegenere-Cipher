@@ -8,26 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Britton\\.nuget\\packages\\": {}
+    "C:\\Users\\britt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Britton\\Desktop\\Programming 1415\\Lab 1\\Lab 1.csproj",
+      "projectUniqueName": "C:\\Users\\britt\\OneDrive\\Desktop\\Scripts\\Lab-1-Vegenere-Cipher\\Lab 1.csproj",
       "projectName": "Lab 1",
-      "projectPath": "C:\\Users\\Britton\\Desktop\\Programming 1415\\Lab 1\\Lab 1.csproj",
-      "packagesPath": "C:\\Users\\Britton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Britton\\Desktop\\Programming 1415\\Lab 1\\obj\\",
+      "projectPath": "C:\\Users\\britt\\OneDrive\\Desktop\\Scripts\\Lab-1-Vegenere-Cipher\\Lab 1.csproj",
+      "packagesPath": "C:\\Users\\britt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\britt\\OneDrive\\Desktop\\Scripts\\Lab-1-Vegenere-Cipher\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Britton\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\britt\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
