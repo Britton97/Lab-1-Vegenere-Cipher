@@ -13,7 +13,7 @@ string input = string.Empty;
 while (!correctInput)
 {
     Console.WriteLine("Please enter the key:");
-    input = Console.ReadLine() ?? string.Empty; 
+    input = Console.ReadLine() ?? string.Empty;
     if (IsValidInput(input))
     {
         correctInput = true;
@@ -37,15 +37,15 @@ if they are not they return false, otherwise they return true.
     bool passed = true;
     foreach (char c in passedInput)
     {
-        passed = IsLowercaseLetter(c) ? true : false; 
+        passed = IsLowercaseLetter(c) ? true : false;
         /*
         ternary operator. it works by evaluating the condition passed to it (char.IsLower(c) in this case).
         the condition is evaluated to true or false. if true, the first value is returned, if false, the second value is returned.
         */
-        if(!passed)
-        {
-            Debug.Assert(passed, $"The keys must be all lowercase letters.\n{c} is not a valid key.");
-        }
+        Debug.Assert(passed, $"The keys must be all lowercase letters.\n{c} is not a valid key.");
+
+        //Debug.Assert(IsLowercaseLetter('a') == true);
+        //Debug.Assert(IsLowercaseLetter('a') == false, "akdslfj;a");
     }
     return passed;
 }
@@ -66,7 +66,7 @@ static string StringShifter(string passedMessage, string passedKey)
         char keyChar = passedKey[keyIndex]; //make a char of the current character in the key
         int messageCharASCII = (int)messageChar; //convert the message char to its ascii value
         int keyCharASCII = (int)keyChar; //convert the key char to its ascii value
-        int newCharASCII =  ASCIIRangeLimiter(messageCharASCII + keyCharASCII); //add the ascii values together
+        int newCharASCII = ASCIIRangeLimiter(messageCharASCII + keyCharASCII); //add the ascii values together
         char newChar = (char)newCharASCII; //convert the added ascii values back to a char
         encryptedMessage += newChar; //add the new char to the encrypted message that will be returned to the user and printed to the console
     }
