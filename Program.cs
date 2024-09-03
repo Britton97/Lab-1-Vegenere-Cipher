@@ -5,6 +5,8 @@ Questions:
 */
 using System.Diagnostics;
 
+TestLowerCase();
+TestValidInput();
 Console.WriteLine("This program encrypts the characters of a message using the Vigenere method.");
 Console.WriteLine("Please enter a message!");
 string message = Console.ReadLine() ?? string.Empty; //if value is null, set to string to empty
@@ -42,10 +44,6 @@ if they are not they return false, otherwise they return true.
         ternary operator. it works by evaluating the condition passed to it (char.IsLower(c) in this case).
         the condition is evaluated to true or false. if true, the first value is returned, if false, the second value is returned.
         */
-        Debug.Assert(passed, $"The keys must be all lowercase letters.\n{c} is not a valid key.");
-
-        //Debug.Assert(IsLowercaseLetter('a') == true);
-        //Debug.Assert(IsLowercaseLetter('a') == false, "akdslfj;a");
     }
     return passed;
 }
@@ -85,4 +83,20 @@ static int ASCIIRangeLimiter(int passedValue)
         passedValue = passedValue % maxRange;
     }
     return passedValue;
+}
+
+static void TestLowerCase()
+{
+    Debug.Assert(IsLowercaseLetter('a') == true);
+    Debug.Assert(IsLowercaseLetter('A') == false);
+    Debug.Assert(IsLowercaseLetter('z') == true);
+    Debug.Assert(IsLowercaseLetter('A') == false);
+    Debug.Assert(IsLowercaseLetter('"') == false);
+    Debug.Assert(IsLowercaseLetter('{') == false);
+}
+
+static void TestValidInput()
+{
+    Debug.Assert(IsValidInput("abc") == true);
+    Debug.Assert(IsValidInput("ABC123") == false);
 }
